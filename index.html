@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>At The Blanc - Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.jpg" alt="At The Blanc Logo" class="logo">
+            <h1>At The Blanc</h1>
+        </div>
+        <input id="search" type="text" placeholder="Search products..." />
+    </header>
+
+
+    <main>
+      <div class="products">
+        <div class="product" data-name="Iced Red Lemon Tea" data-price="150">
+          <img src="images/red.jpg" alt="Iced Red Lemon Tea">
+          <h3>Iced Red Lemon Tea</h3>
+          <p class="price">₱80.00</p>
+          <p class="measure">Size: 250ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+
+        <div class="product" data-name="Biscoff" data-price="80">
+          <img src="images/biscoff.jpg" alt="Biscoff">
+          <h3>Biscoff</h3>
+          <p class="price">₱180.00</p>
+          <p class="measure">Size: 60ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+
+        <div class="product" data-name="ButterBeer" data-price="140">
+          <img src="images/butter.jpg" alt="ButterBeer">
+          <h3>Butter Beer</h3>
+          <p class="price">₱100.00</p>
+          <p class="measure">Size: 250ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+
+        <div class="product" data-name="Spanish Latte" data-price="160">
+          <img src="images/spanish.jpg" alt="Spanish Latte">
+          <h3>Spanish Latte</h3>
+          <p class="price">₱160.00</p>
+          <p class="measure">Size: 250ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+
+        <div class="product" data-name="Iced Matcha" data-price="120">
+          <img src="images/matcha.jpg" alt="Iced Matcha">
+          <h3>Iced Matcha</h3>
+          <p class="price">₱120.00</p>
+          <p class="measure">Size: 300ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+
+        <div class="product" data-name="Iced Lemon Tea" data-price="170">
+          <img src="images/lemon.jpg" alt="Iced Lemon Tea">
+          <h3>Iced Lemon Tea</h3>
+          <p class="price">₱170.00</p>
+          <p class="measure">Size: 350ml</p>
+          <button class="add-btn">Add to cart</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="sidebar">
+    <div class="cart-header">
+      <h2>Shopping Cart</h2>
+      <small id="cart-count">0 items</small>
+    </div>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="cart-total">₱0.00</strong>
+      </div>
+      <button id="checkout-btn" class="checkout-btn" disabled>Checkout</button>
+      <button id="clear-cart" class="clear-btn">Clear Cart</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
